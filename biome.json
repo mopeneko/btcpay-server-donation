@@ -12,5 +12,11 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "single"
+    }
   }
 }
