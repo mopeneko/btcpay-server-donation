@@ -1,10 +1,13 @@
+import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
+  LiveReload,
   Meta,
   Outlet,
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import stylesheet from "~/tailwind.css?url";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -19,6 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         {children}
         <ScrollRestoration />
         <Scripts />
+        {process.env.NODE_ENV === "development" && <LiveReload />}
       </body>
     </html>
   );
@@ -27,3 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return <Outlet />;
 }
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesheet },
+];
