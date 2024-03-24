@@ -8,9 +8,6 @@ dependencies:
   '@remix-run/cloudflare':
     specifier: ^2.8.1
     version: 2.8.1(@cloudflare/workers-types@4.20240320.1)(typescript@5.4.3)
-  '@remix-run/node':
-    specifier: ^2.8.1
-    version: 2.8.1(typescript@5.4.3)
   '@remix-run/react':
     specifier: ^2.8.1
     version: 2.8.1(react-dom@18.2.0)(react@18.2.0)(typescript@5.4.3)
