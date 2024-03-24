@@ -1,4 +1,4 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import { useState } from 'react';
 
 export const meta: MetaFunction = () => {
@@ -20,7 +20,7 @@ export default function Index() {
       <h1>もぺに投げ銭する</h1>
       <form
         method='POST'
-        action='https://btcpayserverico7ftwx-btcpay-server.functions.fnc.nl-ams.scw.cloud/api/v1/invoices'
+        action='https://btcpaysrv.lem0n.cc/api/v1/invoices'
         className='pt-4'
       >
         <input
