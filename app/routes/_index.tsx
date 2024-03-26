@@ -3,8 +3,8 @@ import { useState } from 'react';
 
 export const meta: MetaFunction = () => {
   return [
-    { title: 'New Remix App' },
-    { name: 'description', content: 'Welcome to Remix!' },
+    { title: 'もぺどねーと' },
+    { name: 'description', content: 'もぺにBitcoinで投げ銭できるサイト' },
   ];
 };
 
